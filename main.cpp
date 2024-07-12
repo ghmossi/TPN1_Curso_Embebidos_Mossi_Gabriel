@@ -79,7 +79,7 @@ int main()
     initUART();
     inputsInit();
     outputsInit();
-    serial_port.attach(&on_rx_interrupt, SerialBase::RxIrq);
+    
     //char buffer []={"Prueba envio puerto serie\n"};
     
     while (true) {
@@ -113,6 +113,7 @@ void initUART()
         /* parity */ SerialBase::None,
         /* stop bit */ 1
     );
+    serial_port.attach(&on_rx_interrupt, SerialBase::RxIrq);
 
 }
 
