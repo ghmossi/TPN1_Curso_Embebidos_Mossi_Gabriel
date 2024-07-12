@@ -4,7 +4,7 @@
 
 ## Descripción del Proyecto
 
-Para este proyecto se utilizan las entradas analógicas A0 y A1 conectadas a un potenciómetro. Se utiliza el valor entre 0 y 1 volt que nos da la salida de los conversores y se envía por UART a NODE-RED. También se usa la entrada BOTON USER y la salida LED1, para silumar entrada y salida. 
+Para este proyecto se utilizan las entradas analógicas A0 y A1 conectadas a un potenciómetro. Se utiliza el valor entre 0.0 y 1.0 volt que nos da la salida de los conversores y se envía por UART a NODE-RED. También se usa la entrada BOTON USER y la salida LED1, para silumar entrada y salida. 
 
 ## Funcionalidades
 
