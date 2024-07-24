@@ -49,6 +49,7 @@ float readTemperatureSPI()
     value |= spiMax6675.write(0x00); // Enviar y recibir el segundo byte
     cs = 1;
     value >>= 3;
+    //se multiplica por 0,25 para que el valor que se obtiene por SPI vaya de 0 a 1024, con salto de 0,25 (por hoja de datos)
     temperature = value * 0.25;
     return temperature;
 }
