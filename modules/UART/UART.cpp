@@ -11,7 +11,7 @@
 
 //=====[Declaration of private defines]========================================
 
-#define NUMBER_TIME_UART                        3000
+#define NUMBER_TIME_MS_UART                      3000
 #define NUMBER_TIME_TEMPERATURE_UART            4000
 
 //=====[Declaration of private data types]=====================================
@@ -64,7 +64,8 @@ void UARTUpdate(){
     float temperature =0.0;
   
     accumulatedTimeUART = accumulatedTimeUART + SYSTEM_TIME_INCREMENT_MS;
-    if (accumulatedTimeUART== NUMBER_TIME_UART || lastStateButton0 !=readStateButton())
+    // se envia datos cada 3 segundos o cuando se produce uan cambio en la entrada button.
+    if (accumulatedTimeUART== NUMBER_TIME_MS_UART || lastStateButton0 !=readStateButton())
     {
         lastStateButton0 = readStateButton();
         accumulatedTimeUART=0;
