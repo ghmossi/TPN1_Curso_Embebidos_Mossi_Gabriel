@@ -58,7 +58,8 @@ void initUART()
 
 }
 
-void UARTUpdate(){
+void UARTUpdate()
+{
     char str[100];
     int stringLength;
     float temperature =0.0;
@@ -74,15 +75,15 @@ void UARTUpdate(){
         serial_port.write( str, stringLength );
     }
     if ( receivedChar == '0' )
-        {
+    {
             // activo LD1  
             outputUpdate(1);
-        }
+    }
     if ( receivedChar == '1' )
-        {
+    {
             // activo LD1  
             outputUpdate(0);
-        }
+    }
 } 
 
 //=====[Implementations of private functions]==================================
