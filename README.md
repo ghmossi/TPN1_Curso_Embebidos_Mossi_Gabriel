@@ -41,7 +41,7 @@ Para este proyecto se utilizan las entradas analógicas A0 y A1 conectadas a un 
 
 ## Descripción del Proyecto
 
-Es la continuación del TP1, donde se agregó un sensor de temperatura spi (MAX6675), se trabajó en forma modular con archivos, se utilizó variables públicas y privadas.
+Es la continuación del TP1, donde se agregó un sensor de temperatura con interfaz SPI (MAX6675), se trabajó en forma modular con archivos, se utilizó variables públicas y privadas.
 La NUCLEO envía cada determinado tiempo los valores adc0, adc1, temperatura, input0 e input1. Además, envía datos cuando hay un cambio en alguna de sus entradas.
 El uso de maquina de estado finita se implemento para el debounce de las señales de entrada.
 
