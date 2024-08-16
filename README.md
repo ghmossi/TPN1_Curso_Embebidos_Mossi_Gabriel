@@ -1,5 +1,5 @@
 ## TP Final  - Curso Sistemas Embebidos  2024
-# “ INTERFACE MODBUS TCP”
+# “INTERFACE MODBUS TCP”
 #
 ### Autor:
 ## Gabriel H. Mossi gmossi@gmail.com
@@ -47,34 +47,34 @@ La funcionabilidad básica de la Interface, es poder leer entradas analógicas, 
 |Conectividad|Modbus RTU/TCP| Modbus/SNMP/MQTT |
 |Entradas/Salidas|8/14 Analog Inputs - 16/32 3.3V GPIOs|12DI/6DO|
 |Configuración|Interface USB|Interface Ethernet|
-|Alimentación|12 Vdc|10 - 30 Vdc|
+|Alimentación|12 VDC|10 - 30 VDC|
 |Precio|250 usd|200 usd|
 |Link|https://numato.com/product/prodigy-eg-series-16-32-channel-usb-rtu-tcp-modbus-gpio-module/|https://www.advantech.com/es-ar/products/a67f7853-013a-4b50-9b20-01798c56b090/adam-6050/mod_b009c4b4-4b7c-4736-b16f-241978245e6a|
 #
 ### Tabla de requisitos:
 | Requisitos       | ID  | Descripción                                                                                                                                                          |
 |------------------|-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Conectividad     | 1.1 | El equipo permitira comunicación Modbus TCP.                                                                                                                         |
-|                  | 1.2 | El equipo permitira comunicación RS-232.                                                                                                                             |
+| Conectividad     | 1.1 | El equipo permitirá comunicación Modbus TCP.                                                                                                                         |
+|                  | 1.2 | El equipo permitirá comunicación RS-232.                                                                                                                             |
 | Entradas/Salidas | 2.1 | El equipo contará con manejo de entradas digitales.                                                                                                                  |
 |                  | 2.2 | El equipo contará con manejo de salidas digitales.                                                                                                                   |
 |                  | 2.3 | El equipo contará con manejo de entradas analogicas.                                                                                                                 |
 |                  | 2.4 | El equipo contará con sensor de temperatura.                                                                                                                         |
 | Modo de trabajo  | 3.1 | El equipo tendrá entradas y salidas mapeandas a registros Modbus.                                                                                                    |
-|                  | 3.2 | El equipo  enviarán via RS 232 datos de registros Modbus.                                                                                                            |
-| Configuración    | 4.1 | El equipo se podrá configurar via WiFi.                                                                                                                              |
-| Alimentación     | 5.1 | El equipo sera alimentado por fuente de 5V.                                                                                                                          |
-| Fecha de entrega | 6.1 | El equipo podra estar finalizado en dos semanas.                                                                                                                     |
-| Documentación    | 7.1 | El prototipo debe ir acompañado de una lista de componentes, un diagrama , repositorio de código yuna tabla que indica el cumplimiento de requisitos y casos de uso. |
+|                  | 3.2 | El equipo  enviará vía RS 232 datos de registros Modbus.                                                                                                            |
+| Configuración    | 4.1 | El equipo se podrá configurar vía WiFi.                                                                                                                              |
+| Alimentación     | 5.1 | El equipo será alimentado por fuente de 5V.                                                                                                                          |
+| Fecha de entrega | 6.1 | El equipo podrá estar finalizado en dos semanas.                                                                                                                     |
+| Documentación    | 7.1 | El prototipo debe ir acompañado de una lista de componentes, un diagrama , repositorio de código y una tabla que indica el cumplimiento de requisitos y casos de uso. |
 #
 ### Casos de uso:
 #
 Caso de uso N°1: “El usuario por medio de una PC tendrá manejo de entradas y salidas”.
 |Elementos caso de uso|Definición|
 |:----|:----|
-|Disparador|El usuario necesita controlar perifericos como detectar sensores o switches.|
+|Disparador|El usuario necesita controlar periféricos como detectar sensores o switches.|
 |Precondición|Tener un cliente Modbus TCP como Node-red.|
-|Flujo basico|El usuario puede leer o escribir registros que mepean entredas y salidas, de esta manera puede manejar hardware.|
+|Flujo basico|El usuario puede leer o escribir registros que mepean entradas y salidas, de esta manera puede manejar hardware.|
 |Flujo alternativo| |
 
 #
@@ -82,16 +82,16 @@ Caso de uso N°2: “El usuario por medio de una PC podrá implementar un sistem
 |Elementos caso de uso|Definición|
 |:----|:----|
 |Disparador|El usuario necesita armar un sistema de control para el llenado de un piscina.|
-|Precondición|Tener un cliente Modbus TCP como Node-red con una logica de prender bomba según estado de sensor de llenado.|
-|Flujo basico|El usuario puede leer o escribir registros que mepean entredas y salidas, de esta manera lograr una logica para controlar un proceso.|
+|Precondición|Tener un cliente Modbus TCP como Node-red con una lógica de prender bomba según estado de sensor de llenado.|
+|Flujo basico|El usuario puede leer o escribir registros que mepean entradas y salidas, de esta manera lograr una lógica para controlar un proceso.|
 |Flujo alternativo| |
 
 #
-Caso de uso N°3: “El usuario enviar datoa por Modbus TCP y que un equipo con puerto serie lo reciba”.
+Caso de uso N°3: “El usuario envía datos por Modbus TCP y un equipo con puerto serie lo recibe”.
 |Elementos caso de uso|Definición|
 |:----|:----|
-|Disparador|El usuario necesita que un equipo que no cuenta con puerto serie envie datos a uno que solo tiene puedo serie.|
-|Precondición|Tener un cliente Modbus TCP como Node-red para envio de datos.|
+|Disparador|El usuario necesita que un equipo que no cuenta con puerto serie envié datos a uno que solo tiene puedo serie.|
+|Precondición|Tener un cliente Modbus TCP como Node-red para envió  de datos.|
 |Flujo basico|El usuario puede escribir un registros dado, y el dato en el mismo es enviado por UART. Si el dato en el registro cambia nuevamente es enviado por UART.|
 |Flujo alternativo| |
 
