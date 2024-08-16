@@ -42,7 +42,7 @@ La funcionabilidad básica de la Interface, es poder leer entradas analógicas, 
 ## 2. Elicitación de requisitos y casos de uso
 #
 ### Tabla comparativa de productos en el mercado:
-|Caracteristicas|Prodigy EG Series|ADAM-6050|
+|Características|Prodigy EG Series|ADAM-6050|
 |:----|:----|:----|
 |Conectividad|Modbus RTU/TCP| Modbus/SNMP/MQTT |
 |Entradas/Salidas|8/14 Analog Inputs - 16/32 3.3V GPIOs|12DI/6DO|
