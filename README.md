@@ -14,7 +14,7 @@ Los aspectos que se toman para la decisión de proyecto a implementar son los si
 -	Conocimientos técnicos.
 
 Los proyectos para analizar su implementación son los siguientes:
--	Interface Modbus TCP (Manejo de entradas y salidas digitales, entradas analógicas, sensor de temperatura con interfaz SPI, modulo WiFi para configuración de parámetros).
+-	Interface Modbus TCP (Manejo de entradas y salidas digitales, entradas analógicas, sensor de temperatura con interface SPI, modulo WiFi para configuración de parámetros).
 -	Conversor de Modbus TCP a Modbus RTU (Posibilidad de comunicar hasta 3 dispositivos Modbus RTU).
 
 
@@ -72,7 +72,7 @@ La funcionabilidad básica de la Interface, es poder leer entradas analógicas, 
 Caso de uso N°1: “El usuario por medio de una PC tendrá manejo de entradas y salidas”.
 |Elementos caso de uso|Definición|
 |:----|:----|
-|Disparador|El usuario necesita controlar periféricos como detectar sensores o switches.|
+|Disparador|El usuario necesita controlar periféricos, como detectar sensores o switches.|
 |Precondición|Tener un cliente Modbus TCP como Node-red.|
 |Flujo basico|El usuario puede leer o escribir registros que mepean entradas y salidas, de esta manera puede manejar hardware.|
 |Flujo alternativo| |
@@ -92,7 +92,7 @@ Caso de uso N°3: “El usuario envía datos por Modbus TCP y un equipo con puer
 |:----|:----|
 |Disparador|El usuario necesita que un equipo que no cuenta con puerto serie envié datos a uno que solo tiene puedo serie.|
 |Precondición|Tener un cliente Modbus TCP como Node-red para envió  de datos.|
-|Flujo basico|El usuario puede escribir un registros dado, y el dato en el mismo es enviado por UART. Si el dato en el registro cambia nuevamente es enviado por UART.|
+|Flujo basico|El usuario puede escribir un registro particular y el dato en el mismo será enviado por UART. Si el dato en el registro cambia, nuevamente se producirá un envió de información.|
 |Flujo alternativo| |
 
 
