@@ -14,7 +14,7 @@ Los aspectos que se toman para la decisión de proyecto a implementar son los si
 -	Conocimientos técnicos.
 
 Los proyectos para analizar su implementación son los siguientes:
--	Interface Modbus TCP (Manejo de entradas y salidas digitales, entradas analógicas, sensor de temperatura con interface SPI, modulo WiFi para configuración de parámetros).
+-	Interface Modbus TCP (Manejo de entradas y salidas digitales, entradas analógicas, sensor de temperatura con interface SPI, modulo Wi-Fi para configuración de parámetros).
 -	Conversor de Modbus TCP a Modbus RTU (Posibilidad de comunicar hasta 3 dispositivos Modbus RTU).
 
 
@@ -45,9 +45,9 @@ La funcionabilidad básica de la Interface, es poder leer entradas analógicas, 
 |Características|Prodigy EG Series|ADAM-6050|
 |:----|:----|:----|
 |Conectividad|Modbus RTU/TCP| Modbus/SNMP/MQTT |
-|Entradas/Salidas|8/14 Analog Inputs - 16/32 3.3V GPIOs|12DI/6DO|
+|Entradas/Salidas|8/14 Analog Inputs - 16/32 3.3 V GPIOs|12DI/6DO|
 |Configuración|Interface USB|Interface Ethernet|
-|Alimentación|12 VDC|10 - 30 VDC|
+|Alimentación|12 V|10 - 30 V|
 |Precio|250 usd|200 usd|
 |Link|https://numato.com/product/prodigy-eg-series-16-32-channel-usb-rtu-tcp-modbus-gpio-module/|https://www.advantech.com/es-ar/products/a67f7853-013a-4b50-9b20-01798c56b090/adam-6050/mod_b009c4b4-4b7c-4736-b16f-241978245e6a|
 #
@@ -62,8 +62,8 @@ La funcionabilidad básica de la Interface, es poder leer entradas analógicas, 
 |                  | 2.4 | El equipo contará con sensor de temperatura.                                                                                                                         |
 | Modo de trabajo  | 3.1 | El equipo tendrá entradas y salidas mapeandas a registros Modbus.                                                                                                    |
 |                  | 3.2 | El equipo  enviará vía RS 232 datos de registros Modbus.                                                                                                            |
-| Configuración    | 4.1 | El equipo se podrá configurar vía WiFi.                                                                                                                              |
-| Alimentación     | 5.1 | El equipo será alimentado por fuente de 5V.                                                                                                                          |
+| Configuración    | 4.1 | El equipo se podrá configurar vía Wi-Fi.                                                                                                                              |
+| Alimentación     | 5.1 | El equipo será alimentado por fuente de 5 V.                                                                                                                          |
 | Fecha de entrega | 6.1 | El equipo podrá estar finalizado en dos semanas.                                                                                                                     |
 | Documentación    | 7.1 | El prototipo debe ir acompañado de una lista de componentes, un diagrama , repositorio de código y una tabla que indica el cumplimiento de requisitos y casos de uso. |
 #
